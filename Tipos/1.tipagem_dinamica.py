@@ -1,6 +1,7 @@
+#Limpa o terminal (|| significa ou).
 import os
 
-os.system("cls || clear") #Limpa o terminal (|| significa ou).
+os.system("cls || clear") 
 
 # Tipagem dinâmica.
 nome = "Marta"
