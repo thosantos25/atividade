@@ -15,6 +15,7 @@ def buscar_usuario_por_nome(nome, usuarios):
     return -1
 
 def menu_principal():
+    
     usuarios = [
         {"nome": "João", "idade": 25},
         {"nome": "Maria", "idade": 30},
@@ -24,34 +25,47 @@ def menu_principal():
 
 # Entrada
 
+print("""\nMenu:
+            1 - Listar todos os usuários
+            2 - Adicionar um novo usuário
+            3 - Remover um usuário
+            4 - Buscar usuário pelo nome
+            5 - Sair""")
+usuarios = [
+        {"nome": "João", "idade": 25},
+        {"nome": "Maria", "idade": 30},
+        {"nome": "Pedro", "idade": 22},
+        # Outros usuários
+    ]
+
+
 while True:
-        print("\nMenu:")
-        print("1 - Listar todos os usuários")
-        print("2 - Adicionar um novo usuário")
-        print("3 - Remover um usuário")
-        print("4 - Buscar usuário pelo nome")
-        print("5 - Sair")
-        
-        opcao = input("Escolha uma opção: ")
+
+    opcao = input("Escolha uma opção: \n")
+    print("\n")
 
 # Processamento
-        if opcao == "1":
+    if opcao == "1":
             # Lógica para listar todos os usuários
+            input("Digite o número para listar usuários: ")
+            usuarios.append
             pass
-        elif opcao == "2":
+    elif opcao == "2":
             # Lógica para adicionar um novo usuário
+            input("Digite um usuário para o cadastro: ")
+            usuarios.append
             pass
-        elif opcao == "3":
+    elif opcao == "3":
             # Lógica para remover um usuário
             pass
-        elif opcao == "4":
+    elif opcao == "4":
             nome = input("Digite o nome do usuário a ser buscado: ")
             buscar_usuario_por_nome(nome, usuarios) # type: ignore
 
 # Saída 
 
-        elif opcao == "5":
-            print("Saindo do sistema.")
-            break
-        else:
-            print("Opção inválida. Tente novamente.")
+    elif opcao == "5":
+        print("Saindo do sistema.")
+    break
+else:
+    print("Opção inválida. Tente novamente.")
